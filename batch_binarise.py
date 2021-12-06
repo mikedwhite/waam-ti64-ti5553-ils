@@ -8,12 +8,13 @@ import os
 import numpy as np
 from skimage import io, color, morphology, img_as_ubyte, filters
 
-from preprocessing import hmf_gauss, otsu
+from mftools.preprocess.filters import hmf_gauss
+from mftools.preprocess.binarise import otsu
 
 
 # Define input and output paths
-input_path = 'raw_data/5553on64/TileSet/Line3/'
-output_path = f'binary_tiles/{input_path[9:]}'
+input_path = 'data/5553on64/Line1/'
+output_path = f'binary_tiles/{input_path[5:]}'
 input_filetype = 'tif'
 output_filetype = 'jpg'
 

@@ -6,19 +6,17 @@ import csv
 from glob import glob
 import os
 
+import matplotlib.pyplot as plt
 import numpy as np
 from skimage import io, img_as_bool
-import matplotlib
-import matplotlib.pyplot as plt
-matplotlib.rcParams.update({'font.size': 14})
-plt.rcParams['figure.dpi'] = 100
 
-from measurements import vol_frac, chord_length
-from misc import determine_scaling
+from mftools.measure.grain_size import chord_length
+from mftools.measure.volume_fraction import vol_frac
+from mftools.measure.scaling import determine_scaling
 
 
 # Define paths
-input_path = 'binary_tiles/5553on64/TileSet/Line3/'
+input_path = 'binary_tiles/5553on64/Line1/'
 output_path = f'measurements/{input_path[13:]}'
 
 # ILS parameters
@@ -29,7 +27,6 @@ min_length = 20
 
 # Create list of files to be analysed
 filenames = sorted(glob(f'{input_path}*.jpg'))
-# filenames = [f'{input_path}Tile_128-001-000_0.jpg']
 
 # Create output directory
 if not os.path.isdir(output_path):
