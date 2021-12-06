@@ -1,4 +1,4 @@
-# waam-ti64-ti5553-ils
+# Project Overview
 
 This repository contains supporting Python code for automated inter-lamellar spacing measurements discussed in
 "Microstructure transition gradients in titanium dissimilar alloy (Ti-5Al-5V-5Mo-3Cr/Ti-6Al-4V) tailored wire-arc
