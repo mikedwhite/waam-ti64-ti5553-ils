@@ -7,5 +7,6 @@ additively manufactured components", which can be found at DOI
 
 The two main scripts are ```batch_binarise.py``` (binarise the whole dataset) and ```ils_random_line-scans.py```
 (perform random line scan measurements on the set of binary images). These call functions from our Python package,
-Microstructural Fingerprinting Tools (mftools), which can be found at
-<https://github.com/mikedwhite/microstructural-fingerprinting-tools>. Note that this package is still under development.
+Microstructural Fingerprinting Tools
+([mftools](https://github.com/mikedwhite/microstructural-fingerprinting-tools)).
+Note that this package is still under development.
